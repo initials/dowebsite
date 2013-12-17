@@ -1,0 +1,32 @@
+body { 
+text-align:center; 
+vertical-align: center;
+
+} 
+#mainContainer { 
+margin:0 auto; 
+vertical-align: center;
+
+}
+#text-place {
+	width: 				600px;
+	margin: 			0 auto 20px auto;
+	#background-color: 	#F5B453;
+
+	padding: 			25px 25px 25px 25px;
+}
+
+.myButtonLink {
+	display: block;
+	width: 75px;
+	height: 168px;
+	background: url('punx.png') bottom;
+	text-indent: -99999px;
+	margin:0 auto; 
+
+}
+.myButtonLink:hover {
+	background-position: 0 0;
+	margin:0 auto; 
+
+}

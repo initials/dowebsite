@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game>	
+	<title>
+		<name>Blog</name>
+		<image></image>
+		<link>http://www.initialsgames.com/main/</link>
+	</title>	
+	<title>
+		<name>Feeding Time</name>
+		<image></image>
+		<link>http://www.initialsgames.com/feedingtime/</link>
+	</title>
+	<title>
+		<name>Super Lemonade Factory</name>
+		<image></image>
+		<link>http://superlemonadefactory.initialsgames.com/</link>
+	</title>
+
+</game>
