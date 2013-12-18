@@ -3,6 +3,7 @@
 	<name>Template</name>
 
 	<image>icon.png</image>
+	<mainPagePosition></mainPagePosition>
 	<!--Download link-->
 	<download>
 		<!--
