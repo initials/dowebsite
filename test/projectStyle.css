@@ -3,12 +3,16 @@ text-align:center;
 vertical-align: center;
 /* This is your BG color!*/
 background-color: 	#110011;
+/* This is your TEXT color!*/
+color: #7F7F7F;
+
+
 } 
 
 #mainContainer { 
 margin:0 auto; 
 vertical-align: center;
-
+background-color: 	#11FF11;
 }
 
 #text-place {

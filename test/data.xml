@@ -6,12 +6,18 @@
 		<PC>http://www.initialsgames.com/template/PCfile.zip</PC>
 		<OSX>http://www.initialsgames.com/template/OSXfile.zip</OSX>
 	</download>
+	<sourcecode>www.github.com/initials/</sourcecode>
 	<screenshots>This will search the screenshots folder.</screenshots>
 	<links>
-		<link>http://www.initialsgames.com/template/</link>
+		<link>
+			<web>http://www.initialsgames.com/template/</web>
+			<name>Some website.</name>
+		</link>
 	</links>	
 	<credits>
-		<credit>A Person</credit>
-		<credit>Another Person</credit>
+		<credit>
+			<name>A Person</name>
+			<website>www.website.com</website>
+		</credit>
 	</credits>
 </game>
