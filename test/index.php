@@ -8,24 +8,22 @@ echo '<font face="Helvetica, Arial" font="" size="3">';
 $xml = simplexml_load_file("data.xml");
 foreach( $xml->children() as $child )
 {
-	foreach( $child->children() as $child2 ) 
+	switch( $child->getName() )
 	{
-		switch( $child2->getName() )
-		{
-			case("name"):
-				echo "<b>".$child2."</b> <br>";
-				break;		
-			case("download"):
-				echo "Download link: ".$child2." <br>";
-				break;	
-			case("image"):
-				echo '<img src="'.$child2.'" alt="InitialsLogo Video Games Retro Video Games 8-bit"> <br>';
-				break;	
-		}
+		case("name"):
+			echo "<b>".$child."</b> <br>";
+			break;		
+		case("download"):
+			echo '<a href="Download this game"'.$child.">Download</a><br>";
+			break;	
+		case("image"):
+			echo '<img src="'.$child.'" alt="InitialsLogo Video Games Retro Video Games 8-bit"> <br>';
+			break;	
 	}
 	echo "<br>";
 }
 
+echo 'Back to main';
 
 echo "</div></span></font></span></font></body></html>";
 ?>

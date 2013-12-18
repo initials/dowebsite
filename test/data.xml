@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game>	
-	<title>
-		<name>Template</name>
-		<image>icon.png</image>
-		<download>http://www.initialsgames.com/template/file.zip</download>
+	<name>Template</name>
+	<image>icon.png</image>
+	<download>
+		<PC>http://www.initialsgames.com/template/PCfile.zip</PC>
+		<OSX>http://www.initialsgames.com/template/OSXfile.zip</OSX>
+	</download>
+	<screenshots>This will search the screenshots folder.</screenshots>
+	<links>
 		<link>http://www.initialsgames.com/template/</link>
-	</title>	
+	</links>	
+	<credits>
+		<credit>A Person</credit>
+		<credit>Another Person</credit>
+	</credits>
 </game>
