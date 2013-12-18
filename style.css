@@ -24,11 +24,14 @@ background-color: 	#ff0000;
 	padding: 			25px 25px 25px 25px;
 }
 
+/* -------------------------------------------------------------------- */
+/* You will need to adjust this for your logo */
+
 .myButtonLink {
 	display: block;
 	width: 75px;
 	height: 168px;
-	background: url('punx.png') bottom;
+	background: url('logo.png') bottom;
 	text-indent: -99999px;
 	margin:0 auto; 
 
@@ -38,7 +41,7 @@ background-color: 	#ff0000;
 	margin:0 auto; 
 
 }
-
+/* -------------------------------------------------------------------- */
 
 
 
