@@ -2,7 +2,7 @@ body {
 text-align:center; 
 vertical-align: center;
 /* This is your BG color!*/
-background-color: 	#1100ff;
+background-color: 	#D3BDB1;
 /* This is your TEXT color!*/
 color: #7F7F7F;
 
@@ -20,8 +20,3 @@ a:link {color:#E56C60;}      /* unvisited link */
 a:visited {color:#E56C60;}  /* visited link */
 a:hover {color:#ffffff;}  /* mouse over link */
 a:active {color:#E56C60;}  /* selected link */
-
-.screenies_media
-{
-	background: center center #ff0000; /* This is the screen shots bg color*/
-}

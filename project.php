@@ -41,22 +41,34 @@ foreach( $xml->children() as $child )
 			}
 			break;							
 		case("image"):
+			
 			echo '<img src="'.$gamename.'/'.$child.'" alt="InitialsLogo Video Games Retro Video Games 8-bit"> <br>';
+			
 			break;	
 
 		case("screenshots"):
+			echo '<div class="screenies_media">';
+			echo '<div class="wrapper">';
+			echo '<div class="screenies">';
+
 			if ($handle = opendir($gamename.'/screenshots')) {
 				while (false !== ($entry = readdir($handle))) {
 					if ($entry != "." && $entry != ".." && substr($entry,0,1) != "_" && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
-						echo '<img src="'.$gamename.'//screenshots//'.$entry.'" /><br>';
-						echo '<br>';
+						
+						echo '<a href="'.$gamename.'//screenshots//'.$entry.'"><img src="'.$gamename.'//screenshots//'.$entry.'" /></a>';
+						
 
 					}
 					
 				}
 
 			}
+
 			closedir($handle);
+			echo '</div>';
+			echo '</div>';
+			echo '</div>';
+			echo '<br>';
 			break;
 	}
 	echo "<br>";
