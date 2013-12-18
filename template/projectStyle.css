@@ -9,6 +9,21 @@ color: #7F7F7F;
 
 } 
 
+/* Links! */
+
+a {
+	color: 				#E56Cff;
+	text-decoration: 	none;
+	
+}
+a:link {color:#E56C60;}      /* unvisited link */
+a:visited {color:#E56C60;}  /* visited link */
+a:hover {color:#ffffff;}  /* mouse over link */
+a:active {color:#E56C60;}  /* selected link */
+
+
+
+
 #mainContainer { 
 margin:0 auto; 
 vertical-align: center;

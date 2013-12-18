@@ -14,24 +14,27 @@ foreach( $xml->children() as $child )
 			echo "<b>".$child."</b> <br>";
 			break;		
 		case("sourcecode"):
-			echo "<b> Source code available: ".$child."</b> <br>";
+			echo  '<a href="'.$child.'">Source code available.</a><br>';
 			break;	
 		case("download"):
 			foreach( $child->children() as $dl ) {
-				echo 'Download this game for: '.$dl->getName(). ' link: '.$dl.'<br>';
+				/*echo 'Download this game for: '.$dl->getName(). ' link: '.$dl.'<br>';*/
+				echo  '<a href="'.$dl.'">Download this game for: '.$dl->getName().'</a><br>';
 			}
 			break;	
 		case("credits"):
-			foreach( $child->children() as $dl ) {
-				echo 'Credits: '.$dl->getName(). ' link: '.$dl.'<br>';
+			echo 'Credits<br>';
+			foreach( $child->children() as $credit ) {
+				/*echo 'Name: '.$credit->{'name'}.'Web: '.$credit->{'website'}.'role: '.$credit->{'role'}  ;*/
+				echo  '<a href="'.$credit->{'website'}.'">'.$credit->{'name'}.'</a> '.$credit->{'role'}.' <br>';
 			}
 			break;	
 		case("links"):
-			echo '<span id="text-place">';
-			foreach( $child->children() as $dl ) {
-				echo 'Links: '.$dl->getName(). ' link: '.$dl.'<br>';
+			echo 'Links<br>';
+			foreach( $child->children() as $links ) {
+				echo  '<a href="'.$links->{'web'}.'">'.$links->{'name'}.'</a><br>';
+				echo '<br>';
 			}
-			echo '</span>';
 			break;							
 		case("image"):
 			echo '<img src="'.$child.'" alt="InitialsLogo Video Games Retro Video Games 8-bit"> <br>';
@@ -50,19 +53,12 @@ foreach( $xml->children() as $child )
 
 			}
 			closedir($handle);
-			break;	
-
-
-
-
-
-
-
+			break;
 	}
 	echo "<br>";
 }
 
-echo 'Back to main';
+echo '<a href="../index.php">Back to main</a>';
 
 echo "</div></span></font></span></font></body></html>";
 ?>
