@@ -6,6 +6,7 @@
 .project
 .metadata
 bin/
+Super*/
 tmp/
 *.tmp
 *.bak
