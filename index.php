@@ -3,6 +3,8 @@ $links = file_get_contents('_index.htm');
 echo $links;	
 
 
+
+
 if ($handle = opendir('.')) {
 	while (false !== ($entry = readdir($handle))) {
 		if ($entry != "." && $entry != ".." && substr($entry,0,1) != "_" && strpos($entry, ".") === FALSE && substr($entry,-4) != ".log" && substr($entry,0,6) != "images" && substr($entry,0,8) != "trailers" && substr($entry,0,9) != "error_log") {
@@ -19,5 +21,9 @@ if ($handle = opendir('.')) {
 }
 closedir($handle);
 
+
+echo '<br>';
+echo 'MicrositeMaker was <a href="http://dopresskit.com/">inspired by presskit()</a><br>';
+echo '<a href="https://github.com/initials/dowebsite">ource Code</a><br><br>';
 echo "</div></span></font></span></font></body></html>";
 ?>
