@@ -24,6 +24,6 @@ closedir($handle);
 
 echo '<br>';
 echo 'MicrositeMaker was <a href="http://dopresskit.com/">inspired by presskit()</a><br>';
-echo '<a href="https://github.com/initials/dowebsite">ource Code</a><br><br>';
+echo '<a href="https://github.com/initials/dowebsite">source Code</a><br><br>';
 echo "</div></span></font></span></font></body></html>";
 ?>
