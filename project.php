@@ -42,7 +42,6 @@ foreach( $xml->children() as $child )
 			echo 'Links<br>';
 			foreach( $child->children() as $links ) {
 				echo  '<a href="'.$links->{'web'}.'">'.$links->{'name'}.'</a><br>';
-				echo '<br>';
 			}
 			break;							
 		case("image"):
