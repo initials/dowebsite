@@ -20,3 +20,8 @@ a:link {color:#E56C60;}      /* unvisited link */
 a:visited {color:#E56C60;}  /* visited link */
 a:hover {color:#ffffff;}  /* mouse over link */
 a:active {color:#E56C60;}  /* selected link */
+
+.screenies_media
+{
+	background: center center #ff0000; /* This is the screen shots bg color*/
+}
