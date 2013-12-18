@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game>	
 	<name>Template</name>
-	<image>icon.png</image>
-	<download>
-		<PC>http://www.initialsgames.com/template/PCfile.zip</PC>
-		<OSX>http://www.initialsgames.com/template/OSXfile.zip</OSX>
-	</download>
-	<sourcecode>http://www.github.com/initials/</sourcecode>
-	<screenshots>This will search the screenshots folder.</screenshots>
-	<links>
-		<link>
-			<web>http://www.initialsgames.com/template/</web>
-			<name>Some website.</name>
-		</link>
-	</links>	
-	<credits>
-		<credit>
-			<name>A Person</name>
-			<website>http://www.website.com</website>
-			<role>no 1</role>
-		</credit>
-		<credit>
-			<name>A2 Person2</name>
-			<website>http://www.website2.com</website>
-			<role>no 2</role>
-		</credit>
 
+	<image>icon.png</image>
+	<!--Download link-->
+	<download>
+		<!--
+		<PC></PC>
+		<OSX></OSX>
+		<Ouya></Ouya>
+		<Xbox></Xbox>
+		<Playstation></Playstation>
+		<WiiU></WiiU>
+		<Flash></Flash>
+		-->
+	</download>
+
+	<informations>
+		<!--
+		<information></information>
+		-->
+	</informations>
+
+	<!--
+	<sourcecode></sourcecode>
+	-->
+	<screenshots>This will search the screenshots folder and insert a set of screenshots.</screenshots>
+
+	<links>
+		<!--
+		<link>
+			<web></web>
+			<name></name>
+		</link>
+		-->
+	</links>	
+
+	<credits>
+		<!--
+		<credit>
+			<name></name>
+			<website></website>
+			<role></role>
+		</credit>
+		-->
 	</credits>
 </game>

@@ -22,10 +22,14 @@ foreach( $xml->children() as $child )
 			break;	
 		case("download"):
 			foreach( $child->children() as $dl ) {
-				/*echo 'Download this game for: '.$dl->getName(). ' link: '.$dl.'<br>';*/
 				echo  '<a href="'.$dl.'">Download this game for: '.$dl->getName().'</a><br>';
 			}
 			break;	
+		case("informations"):
+			foreach( $child->children() as $info ) {
+				echo $info.'<br>';
+			}
+			break;				
 		case("credits"):
 			echo 'Credits<br>';
 			foreach( $child->children() as $credit ) {
