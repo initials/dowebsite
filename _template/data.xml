@@ -5,17 +5,15 @@
 	<image>icon.png</image>
 	<mainPagePosition></mainPagePosition>
 	<!--Download link-->
-	<download>
+	<downloads>
 		<!--
-		<PC></PC>
-		<OSX></OSX>
-		<Ouya></Ouya>
-		<Xbox></Xbox>
-		<Playstation></Playstation>
-		<WiiU></WiiU>
-		<Flash></Flash>
+		<download>
+			<text></text>
+			<link></link>
+			<platform></platform>
+		</download>
 		-->
-	</download>
+	</downloads>
 
 	<informations>
 		<!--
@@ -23,9 +21,15 @@
 		-->
 	</informations>
 
-	<!--
-	<sourcecode></sourcecode>
+	<sourcecodes>
+		<!--
+		<sourcecode>
+			<link></link>
+			<platform></platform>
+		</sourcecode>
 	-->
+	</sourcecodes>
+	
 	<screenshots>This will search the screenshots folder and insert a set of screenshots.</screenshots>
 
 	<links>

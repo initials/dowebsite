@@ -1,0 +1,28 @@
+body { 
+text-align:center; 
+vertical-align: center;
+/* This is your BG color!*/
+background-color: 	#__BGCOLOR__;
+/* This is your TEXT color!*/
+color: #__TEXTCOLOR__;
+
+
+} 
+
+/* Links! */
+
+a {
+	color: 				#__LINKCOLOR__;
+	text-decoration: 	none;
+	
+}
+
+a:link {color:#__LINKCOLOR__;}      /* unvisited link */
+a:visited {color:#__VISITEDCOLOR__;}  /* visited link */
+a:hover {color:#__HOVERCOLOR__;}  /* mouse over link */
+a:active {color:#__ACTIVECOLOR__;}  /* selected link */
+
+.screenies_media
+{
+	background: center center #__BGINSERTCOLOR__; /* This is the screen shots bg color*/
+}

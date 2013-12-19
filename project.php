@@ -1,12 +1,24 @@
 <?php
 
-$gamename = $_GET['f'];
-
-
 $links = file_get_contents('_project.htm');
 echo $links;	
 
-echo '<link href="'.$gamename.'/projectStyle.css" rel="stylesheet" type="text/css">';
+$gamename = $_GET['f'];
+
+
+if (isset($_GET['style']))
+{
+     //do stuff that requires 's'
+	$style = $_GET['style'];
+	echo '<link href="'.$gamename.'/style_'.$style.'.css" rel="stylesheet" type="text/css">';
+}
+else
+{
+     //do stuff that doesn't need 's'
+	echo '<link href="'.$gamename.'/projectStyle.css" rel="stylesheet" type="text/css">';
+}
+
+
 echo '<font face="Helvetica, Arial" font="" size="3">';
 
 $xml = simplexml_load_file($gamename."/data.xml");
@@ -17,17 +29,20 @@ foreach( $xml->children() as $child )
 		case("name"):
 			echo "<b>".$child."</b> <br>";
 			break;		
-		case("sourcecode"):
-			echo  '<a href="'.$child.'">Source code available.</a><br>';
+		case("sourcecodes"):
+			foreach( $child->children() as $sc ) {
+				echo  '<a href="'.$sc->{'link'}.'">Source code available for: ['.$sc->{'platform'}.']</a><br>';
+			}
 			break;	
-		case("download"):
+		case("downloads"):
 			foreach( $child->children() as $dl ) {
-				echo  '<a href="'.$dl.'">Download this game for: '.$dl->getName().'</a><br>';
+				echo  '<a href="'.$dl->{'link'}.'">'.$dl->{'text'} .': ['.$dl->{'platform'}.']</a><br>';
 			}
 			break;	
 		case("informations"):
 			foreach( $child->children() as $info ) {
 				echo $info.'<br>';
+				echo '<br>';
 			}
 			break;				
 		case("credits"):
