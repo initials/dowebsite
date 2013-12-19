@@ -44,6 +44,6 @@ foreach ($arr as $key => $value) {
 echo '</div>';
 echo '<br>';
 echo 'MicrositeMaker was <a href="http://dopresskit.com/">inspired by presskit()</a><br>';
-echo '<a href="https://github.com/initials/dowebsite">source Code</a><br><br>';
+echo '<a href="https://github.com/initials/dowebsite">Make your own microsites. Source Code on github. </a><br><br>';
 echo "</div></span></font></span></font></body></html>";
 ?>
