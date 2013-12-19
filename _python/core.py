@@ -10,11 +10,8 @@ import glob
 class Palette:
 	def __init__(self):
 		#print 'image info'
-		
 		self.paletteColors = {}
 		self.palette = {}
-		
-
 					
 	def generatePaletteInfo(self):
 		file = 'icon.png'	
