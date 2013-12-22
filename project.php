@@ -67,7 +67,7 @@ foreach( $xml->children() as $child )
 
 		case("screenshots"):
 			echo '<div class="screenies_media">';
-			echo '<div class="wrapper">';
+			
 			echo '<div class="screenies">';
 
 			if ($handle = opendir($gamename.'/screenshots')) {

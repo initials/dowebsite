@@ -70,11 +70,7 @@ background-color: 	#ff0000;
    height: 320px;
 }
 
-.wrapper
-{
-	width: 960px;
-	margin: 0px auto;
-}
+
 
 .screenies_media
 {
@@ -107,8 +103,8 @@ background-color: 	#ff0000;
 	padding: 0px;
 	
 	display: inline;
-	border: 6px solid #152a34;
-	padding: 1px;
+	/*border: 6px solid #152a34;*/
+	padding: 2px;
 	background: #54798b;
 }
 
