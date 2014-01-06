@@ -1,8 +1,12 @@
 body { 
 text-align:center; 
 vertical-align: center;
+width: 600px;
+margin: 			0 auto 20px auto;
+padding: 			25px 25px 25px 25px;
 
 } 
+
 #mainContainer { 
 margin:0 auto; 
 vertical-align: center;
@@ -51,6 +55,14 @@ background-color: 	#ff0000;
 	height: 100px;
 }
 
+.icons img:hover 
+{
+	width: 102px;
+	height: 102px;
+
+
+
+}  
 
 
 .images
@@ -101,11 +113,11 @@ background-color: 	#ff0000;
 	width: 150px;
 	margin: 20px 20px 20px 0px;
 	padding: 0px;
-	
 	display: inline;
-	/*border: 6px solid #152a34;*/
 	padding: 2px;
-	background: #54798b;
+	background: #000;
+
+
 }
 
 .screenies img.last
@@ -113,4 +125,10 @@ background-color: 	#ff0000;
 	margin-right: 0px;
 }
 
+.screenies img:hover 
+{
+	width: 160px;
 
+
+
+}  
