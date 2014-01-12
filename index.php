@@ -1,6 +1,55 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="shortcut icon" href="http://www.initialsgames.com/favicon.ico">
+<link rel="icon" type="image/ico" href="http://www.initialsgames.com/favicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+a:link {color:#6b6c7a;}    /* unvisited link */
+a:visited {color:#6b6c7a;} /* visited link */
+a:hover {color:#FFFFFF;}   /* mouse over link */
+a:active {color:#000000;}  /* selected link */
+
+</style> 
+<title>Initials</title>
+
+</head>
+
+<body bgcolor="#addbe4">
+
+
+<span id="contactContainer">
+
 <?php
-$links = file_get_contents('_index.htm');
-echo $links;	
+$xml = simplexml_load_file("data.xml");
+foreach( $xml->children() as $child )
+{
+	echo '<a href="'.$child.'">'.$child->getName().'</a><br>';
+}
+?>
+</span>
+
+
+<a class="myButtonLink" href="http://www.initialsgames.com/main/">Logo</a>
+
+
+
+<span id="mainContainer" style="color: #7F7F7F;">
+
+
+
+	<font face="Helvetica, Arial" font="" size="3">
+		
+
+
+<br>
+<br>
+
+
+
+<?php
+// $links = file_get_contents('_index.htm');
+// echo $links;	
 
 echo '<div class="icons">';
 
@@ -41,7 +90,9 @@ foreach ($arr as $key => $value) {
 	echo '<br>';
 }
 
-echo '</div>';
+
+
+
 echo '<br>';
 echo 'MicrositeMaker was <a href="http://dopresskit.com/">inspired by presskit()</a><br>';
 echo '<a href="https://github.com/initials/dowebsite">Make your own microsites. Source Code on github. </a><br><br>';

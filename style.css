@@ -1,4 +1,9 @@
 body { 
+
+} 
+
+
+#buffer { 
 text-align:center; 
 vertical-align: center;
 width: 600px;
@@ -7,11 +12,30 @@ padding: 			25px 25px 25px 25px;
 
 } 
 
+
+
 #mainContainer { 
-margin:0 auto; 
+text-align:center; 
 vertical-align: center;
+width: 600px;
+margin: 			0 auto 20px auto;
+padding: 			25px 25px 25px 25px;
+
+
 
 }
+
+#contactContainer 
+{ 
+
+	position: fixed;
+	text-align:left; 
+	vertical-align: left;
+	margin: 			0 auto 20px auto;
+	padding: 			25px 25px 25px 25px;
+}
+
+
 
 #imageContainer { 
 margin:0 auto; 
