@@ -1,0 +1,4 @@
+[12-Jan-2014 17:40:07 America/Chicago] PHP Warning:  simplexml_load_file() [<a href='function.simplexml-load-file'>function.simplexml-load-file</a>]: I/O warning : failed to load external entity &quot;data.xml&quot; in /home3/sbrouwer/public_html/microsites/index.php on line 24
+[12-Jan-2014 17:40:07 America/Chicago] PHP Fatal error:  Call to a member function children() on a non-object in /home3/sbrouwer/public_html/microsites/index.php on line 25
+[12-Jan-2014 17:40:13 America/Chicago] PHP Warning:  simplexml_load_file() [<a href='function.simplexml-load-file'>function.simplexml-load-file</a>]: I/O warning : failed to load external entity &quot;data.xml&quot; in /home3/sbrouwer/public_html/microsites/index.php on line 24
+[12-Jan-2014 17:40:13 America/Chicago] PHP Fatal error:  Call to a member function children() on a non-object in /home3/sbrouwer/public_html/microsites/index.php on line 25
